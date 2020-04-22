@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Built-By: msi
-Build-Jdk: 11.0.6
+Built-By: mouss
+Build-Jdk: 11
 Created-By: Maven Integration for Eclipse
 
