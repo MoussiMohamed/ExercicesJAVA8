@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: mouss
+Build-Jdk: 11
+Implementation-Title: jpa-hibernate-many-to-many-mysql
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: com.hellokoding.jpa
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/jpa-hibernate-many-to-many-mysql
+Created-By: Maven Integration for Eclipse
+
