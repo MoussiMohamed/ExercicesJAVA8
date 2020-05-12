@@ -1,0 +1,9 @@
+C:\Users\mouss\Projects\ExercicesJAVA8\jpa-hibernate-many-to-many-mysql\src\main\java\com\hellokoding\jpa\JpaApplication.java
+C:\Users\mouss\Projects\ExercicesJAVA8\jpa-hibernate-many-to-many-mysql\src\main\java\com\hellokoding\jpa\model\Publisher.java
+C:\Users\mouss\Projects\ExercicesJAVA8\jpa-hibernate-many-to-many-mysql\src\main\java\com\hellokoding\jpa\repository\BookRepository.java
+C:\Users\mouss\Projects\ExercicesJAVA8\jpa-hibernate-many-to-many-mysql\src\main\java\com\hellokoding\jpa\model\Book.java
+C:\Users\mouss\Projects\ExercicesJAVA8\jpa-hibernate-many-to-many-mysql\src\main\java\com\hellokoding\jpa\repository\PublisherRepository.java
+C:\Users\mouss\Projects\ExercicesJAVA8\jpa-hibernate-many-to-many-mysql\src\main\java\com\hellokoding\jpa\book\BookService.java
+C:\Users\mouss\Projects\ExercicesJAVA8\jpa-hibernate-many-to-many-mysql\src\main\java\com\hellokoding\jpa\model\Author.java
+C:\Users\mouss\Projects\ExercicesJAVA8\jpa-hibernate-many-to-many-mysql\src\main\java\com\hellokoding\jpa\model\AuditModel.java
+C:\Users\mouss\Projects\ExercicesJAVA8\jpa-hibernate-many-to-many-mysql\src\main\java\com\hellokoding\jpa\repository\AuthorRepository.java
