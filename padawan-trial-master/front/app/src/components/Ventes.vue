@@ -1,5 +1,14 @@
 <template>
 <div align="center">
+  <form @submit.prevent="add">
+      <input type="text" v-model="form.title" placeholder="Titre" >
+      <input type="text" v-model="form.description" placeholder="description" >
+
+      <v-btn type="submit">
+        Ajouter
+      </v-btn>
+
+  </form>
     <h1>Liste des Ventes</h1>
     <table border="1">
         <tr>
@@ -12,8 +21,8 @@
           <td><span>{{vente.title}}</span> &#160;</td>
           <td><span>{{vente.description}}</span> &#160;</td>
           <td>
-            <v-icon @click="edit(vente)">create</v-icon>
-            <v-icon @click="del(vente)">delete</v-icon>
+            <!-- <v-icon @click="afficherLotsParIdVente(vente.id)">afficher lots</v-icon> -->
+            <router-link :to="{ name: 'lots', params: { sale_id: vente.id }}">Afficher lots</router-link>
           </td>
         </tr>
       </table>
@@ -28,7 +37,12 @@ export default {
   data () {
     return {
       msg: 'Liste des ventes',
-      ventes: ''
+      ventes: [],
+      form: {
+        id: '',
+        title: '',
+        description: ''
+      }
     }
   },
   mounted() {
@@ -41,12 +55,15 @@ export default {
         }).catch ((err) => {
             console.log(err);
         })
-        // axios.get('http://localhost:3000/departamentos').then(res => {
-        //     this.departamentos = res.data
-        // }).catch ((err) => {
-        //     console.log(err);
-        // })
-    }
-  }
+    },
+    add(){
+      // Validation manquante...
+        axios.post('http://localhost:3000/sales/', this.form).then(res => {
+          this.load()
+          this.form.title = ''
+          this.form.description = ''
+        })
+      }
+    },
 }
 </script>
