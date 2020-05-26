@@ -1,14 +1,15 @@
 <template>
-    <h1>Recherche</h1>
+  <h1>Recherche</h1>
 </template>
 
 <script>
+/* eslint-disable */
 export default {
-  name: 'Recherche',
-  data () {
+  name: "Recherche",
+  data() {
     return {
-      msg: 'Ecran de recherche de ventes et lots'
-    }
+      msg: "Ecran de recherche de ventes et lots"
+    };
   }
-}
+};
 </script>
