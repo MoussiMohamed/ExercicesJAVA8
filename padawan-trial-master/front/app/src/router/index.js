@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import Recherche from '@/components/Recherche'
 import Ventes from '@/components/Ventes'
 import Lots from '@/components/Lots'
@@ -11,8 +10,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Ventes',
+      component: Ventes
     },
     {
       path: '/recherche',
@@ -20,12 +19,7 @@ export default new Router({
       component: Recherche
     },
     {
-      path: '/ventes',
-      name: 'Ventes',
-      component: Ventes
-    },
-    {
-      path: '/lots',
+      path: '/lots/:sale_id/:title',
       name: 'lots',
       component: Lots
     }
